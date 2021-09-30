@@ -10,6 +10,10 @@
   overflow: hidden;
   box-shadow: 0 6px 32px rgba($black, 0.1);
 
+  @media (max-width: 767px) {
+    max-width: calc(100% - 16px);
+  }
+
   .header-box {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -18,11 +22,20 @@
     background: $gray-e;
     width: 100%;
     padding: 15px;
+
+    @media (max-width: 767px) {
+      text-align: center;
+      grid-template-columns: 1fr;
+    }
   }
   .heading {
     margin: 0;
     font-size: 22px;
     font-weight: 600;
+
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
   .add-friend-box {
     display: flex;
@@ -44,6 +57,10 @@
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 20px;
     border-top: 1px solid $gray-a;
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
   }
   .friend-name {
     margin: 0 0 5px;
