@@ -1,0 +1,91 @@
+// home page styles
+@import "../../styles/variables/colors";
+
+.find-container {
+  max-width: 50%;
+  margin: 50px auto;
+  border: 1px solid $gray-a;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 32px rgba($black, 0.1);
+
+  .header-box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
+    background: $gray-e;
+    width: 100%;
+    padding: 15px;
+  }
+  .heading {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .add-friend-box {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+  }
+  .add-btn {
+    border-color: transparent;
+  }
+  .search-input {
+    min-width: 250px;
+    border: 1px solid $gray-a;
+    border-radius: 100px;
+    height: 42px;
+  }
+  .friend-card {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 20px;
+    border-top: 1px solid $gray-a;
+  }
+  .friend-name {
+    margin: 0 0 5px;
+    font-weight: 600;
+    word-break: break-all;
+  }
+  .label-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba($black, 0.5);
+  }
+  .btn-style {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .favourite-btn {
+    svg {
+      fill: $theme-warning;
+    }
+  }
+  .favourite-btn.favAdded {
+    background: $theme-warning;
+    svg {
+      fill: $white;
+    }
+  }
+  .delete-btn {
+    svg {
+      fill: $theme-danger;
+    }
+  }
+  .btn-box {
+    text-align: right;
+  }
+  .empty-state {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid $gray-a;
+    margin: 0;
+  }
+}

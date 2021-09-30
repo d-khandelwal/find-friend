@@ -1,0 +1,28 @@
+// button styles
+@import "../../styles/variables/colors";
+
+.btn-style {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 12px;
+  border: 1px solid;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &.warning {
+    border-color: $theme-warning;
+    background: rgba($theme-warning, 0.1);
+    color: $white;
+  }
+  &.danger {
+    border-color: $theme-danger;
+    background: rgba($theme-danger, 0.1);
+    color: $white;
+  }
+}

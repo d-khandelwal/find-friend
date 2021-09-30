@@ -1,0 +1,19 @@
+// styles
+@import "../../styles/variables/colors";
+
+.primary-input {
+  width: 100%;
+  border: none;
+  border-radius: none;
+  height: 55px;
+  padding: 0px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  background: $white;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
